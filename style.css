@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navbar
+{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 100;
+    padding: .4rem 4rem;
+    box-shadow: 5px 5px 20px rgba(0,0,0,.5);
+    animation: navbar 1s ease-in-out;
+    background-color: black;
+}
+@keyframes navbar
+{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+.navbar .navbar-brand
+{
+    font-weight: 800;
+    font-size: 25px;
+    color: green !important;
+    text-shadow: 4px 4px 4px darkgreen;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#navbarSupportedContent
+{
+    color:white !important;
+    font-size: 20px;
+    font-weight: bold;
+    border-bottom:2px solid transparent;
+    animation: contant 2s ease-in-out;
+}
+@keyframes contant
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+}
+#navbarSupportedContent a:hover{
+    border-bottom:2px solid green;
+}
+.nav-link
+{
+    margin-right: 4px;
+    margin-left: 4px;
+}
+#navbarSupportedContent button{
+    color:green;
+    border:1px solid blue ;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 5px;
+    background: transparent;
+    border-radius: 15px;
+}
+#home button:hover{
+    background-color: green;
+    color: white;
+}
+#home
+{
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),url("campsite.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    flex-direction:column ;    
+}
+#home h1{
+    font-size: 60px;
+    color: green;
+    font-weight: bold;
+    text-shadow:2px 2px 2px black;
+    letter-spacing: 3px;
+    text-align: center;
+    word-spacing: 10px;
+    animation: homeh1 1.5s ease-in-out;
+}
+@keyframes homeh1
+{
+    0%
+    {
+        transform: translatey(-300%);
+    }
+}
+#home p{
+    color: gray;
+    text-align: center;
+    text-shadow:2px 2px 2px black;
+    font-size: 30px;
+    animation: homep 2s ease;
+}
+@keyframes homep
+{
+    0%
+    {
+        transform: translatex(300%);
+    }
+}
+.input-group .gocamping{
+    color:white;
+    width:40%;
+    background: transparent;
+    border-radius: 40%;
+    font-weight: bold;
+    border: 4px solid green;
+}
+#home .input-group{
+    
+    width: 50%;
+    height:50px;
+    animation: button 2.5s ease;
+}
+@keyframes button{
+    0%{
+        transform: translateX(-300%);
+    }
+}
+#aboutus
+{
+    flex-direction:column ;
+    background-image: url("stoneblackbg.jpg");
+    
+} 
+@keyframes aboutus
+{
+    0%{transform: translateY(-100%);}
+}
+#aboutus img{
+    width:100%;
+    max-height: 75vh;
+    min-height:20vh;
+    padding-bottom: 20px;
+}   
+#aboutus p{
+    padding-top: 20px;
+    padding-left:40px;
+    padding-right:40px ;
+    text-align:left;
+    color: white;
+    font-size: 20px;
+    animation: aboutus 8s ease;
+}  
+#aboutus h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: green;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px lawngreen;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}  
+#aboutus h3{
+    color:green;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px lawngreen;
+    padding-left:40px;
+    padding-right:40px ;
+}
+#pictures
+{
+    animation: pic 2s ease;
+}
+@keyframes pic{0%{transform: translateX(400%);}}
+#pictures .items img
+{
+    width:150px;
+    height:150px;
+}        
+#pictures .items{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: grey;   
+} 
+#pictures p:hover{
+    color: darkmagenta;
+    font-weight: bold;
+    font-size: 20px;
+}
+#pictures img:hover{
+    border: 10px solid transparent;
+}
+#events
+{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    animation: events 4s ease;
+}
+@keyframes events
+{
+    0%{
+        transform: translateY(-50%);
+    }
+}
+#events h1
+{
+    color:gray;
+    text-shadow: 1px 2px 1px black;
+    margin-bottom: 40px;
+}
+#events .card .btn:hover,#review .card .btn:hover{
+    background-color: blue;
+}
+#events .card,#review .card
+{
+    border-radius: 30px; 
+    min-height: 350px;
+    min-width: 270px;
+}
+#events .card img,#review .card img{
+    min-height:250px;
+    border-radius: 30px;
+}
+
+#events .card:hover,#review .card:hover{
+    border: 6px solid white;
+    box-sizing: 50px;
+}
+@keyframes review
+{
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }40%{
+        opacity:0.7;
+    }
+    70%{
+        opacity: 0.5;
+    }
+    100%{
+        transform: translateY(-50vh);
+        opacity: 0;
+    }
+}
+#review .reviewcontant h1{
+    font-size: 60px;
+    font-weight: 500;
+    color: green;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px lawngreen;
+    letter-spacing: 10px;
+   text-align: center;
+   margin-top: 80px;
+}
+#review .reviewcontant p{
+    letter-spacing: 10px;
+    font-size: 40px;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px lawngreen;
+    text-align: center;
+}
+#review  .c1{
+    animation:review 10s linear infinite;
+    animation-delay: 3s;
+    
+}
+#review  .c2{
+    animation:review 10s linear infinite;
+    animation-delay: 8s; 
+    
+}
+#review .c3{
+    animation:review 10s linear infinite;
+    animation-delay:1s; 
+    
+}
+#review  .c4{
+    animation:review 10s linear infinite;
+    animation-delay: 8s;   
+    
+}
+#review  .c5{
+    animation:review 10s linear infinite;
+    animation-delay: 3s;   
+    
+}
+#review  .c6{
+    animation:review 10s linear infinite;
+    animation-delay: 5s;   
+    
+}
+#review .fa-star{
+    color:gold;
+}
+#nearby
+{
+    margin-top: 40px;
+    margin-bottom: 60px;
+    animation: nearby 5s ease;
+}
+@keyframes nearby
+{
+    0%{transform: translateY(-75%);}
+}
+#nearby h1
+{
+    color:gray;
+    text-shadow: 1px 2px 1px black;
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+#nearby .card .btn:hover{
+    background-color: blue;
+}
+#nearby .card
+{
+    border-radius: 30px;
+    min-height: 350px;
+    min-width: 270px;
+}
+#nearby .card img{
+    min-height:250px;
+    border-radius: 30px;
+}
+#nearby .card:hover{
+    border: 6px solid white;
+    box-sizing: 50px;
+}
+* .fa-star:hover{
+    color:gold;
+}
+#campsite
+{
+    animation: campsite 5.5s ease;
+}
+@keyframes campsite
+{
+    0%{
+        transform: translatey(-100%);
+    }
+}
+#campsitebg
+{
+    background-color: rgba(0, 255, 255, 0.616);
+}
+#campsite h1
+{
+    text-align: center;
+    color:purple;
+    text-shadow: 1px 2px 1px black;
+    margin-bottom: 40px;
+}
+#campsite h6{
+    color:blue;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+}
+#campsite p{
+    color:grey;
+    
+}
+#faq .bg
+{
+    margin-top: 100px;
+   line-height: 80px;
+   animation: faq 10s ease;
+}
+#faq .col h1
+{
+    color:green;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px lawngreen;
+    font-size: 60px;
+    text-align: center;
+}
+#faq p{
+    color:grey;
+    font-size: 20px;
+    text-align: center;
+}
+#faq img{
+    min-width:100%;
+    min-height:200px;
+}
+#faq .btn
+{
+    color:white !important;
+    font-weight: bold;
+}
+#faq .ttu
+{
+    width: 50%;
+    border: 20px;
+    border-radius: 30px;
+    background-color: green;
+}
+#faq ul{
+    text-align: center;
+    list-style-type: none;
+    padding: 50px;
+}
+#faq li{
+    display: inline;
+    font-size: 40px;  
+    margin-left: 10px;  
+}
+#faq .round
+{
+    border: 3px solid white;
+    border-radius: 50px;
+    padding:10px;
+    width: 70px;
+    text-align: center;
+}
+#faq .fa-facebook
+{
+    background-color: skyblue;
+    color:white;
+}
+#faq .fa-twitter
+{
+    background-color: white;
+    color:skyblue;
+}
+#faq .fa-instagram
+{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color:white
+}
+#faq .fa-behance
+{
+    background-color: blue;
+    color:white;
+}
+#faq .fa-dribbble
+{
+    background-color: darkmagenta;
+    color:palevioletred;
+}
+#faq .round:hover{
+    border: 1px solid transparent;
+}
+@keyframes faq
+{
+    0%{
+        transform: translateY(-100%);
+        opacity: 1;
+    }
+}
+#review
+{
+    background-image: url("blackbg.jpg");
+}
+#contact
+{
+    background-color: black;
+    min-height: 100vh;
+    color:white;
+    
+}
+#contact h1
+{
+    color:green !important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 2px lawngreen;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+#contact .icons
+{
+    list-style-type: none;
+    display: flex;
+    letter-spacing: 20px;
+    padding-left: 0px;
+}
